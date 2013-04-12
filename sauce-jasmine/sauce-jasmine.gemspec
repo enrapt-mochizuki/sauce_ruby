@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path(File.dirname(__FILE__) + '/../../lib/sauce/version')
+require File.expand_path(File.dirname(__FILE__) + '/../lib/sauce/version')
 
 Gem::Specification.new do |gem|
   gem.authors       = ["R. Tyler Croy"]
