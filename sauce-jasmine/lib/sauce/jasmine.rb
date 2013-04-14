@@ -5,7 +5,7 @@ module Jasmine
     def initialize(browser, http_address)
       @http_address = http_address
       name = job_name
-      @driver = Sauce::Selenium2.new(:browser => browser, :job_name => name)
+      @driver = Sauce::Selenium2.new(:job_name => name)
       puts "Starting job named: #{name}"
     end
 
