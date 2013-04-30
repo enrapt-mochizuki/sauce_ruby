@@ -31,7 +31,7 @@ namespace :jasmine do
         unless version.nil?
           ENV['SAUCE_BROWSER_VERSION'] = version.to_s
         end
-        t.rspec_opts = '--color'
+        t.rspec_opts = ENV['SAUCE_JASMINE_RSPEC_OPTS'] || '--color'
         t.pattern = [File.expand_path(File.dirname(__FILE__) + '/runner.rb')]
       end
     end
